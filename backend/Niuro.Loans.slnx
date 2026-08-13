@@ -1,5 +1,9 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/Niuro.Loans.Application/Niuro.Loans.Application.csproj" />
     <Project Path="src/Niuro.Loans.Domain/Niuro.Loans.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Niuro.Loans.UnitTests/Niuro.Loans.UnitTests.csproj" />
   </Folder>
 </Solution>
