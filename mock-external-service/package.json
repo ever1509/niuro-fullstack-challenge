@@ -1,0 +1,13 @@
+{
+  "name": "niuro-loans-mock-external-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stand-in for the partner system that approved loan applications are forwarded to.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
