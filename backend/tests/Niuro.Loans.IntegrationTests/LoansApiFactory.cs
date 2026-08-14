@@ -27,6 +27,10 @@ public class LoansApiFactory : WebApplicationFactory<Program>, IAsyncLifetime
         builder.UseEnvironment(Environments.Development);
         builder.UseSetting("ConnectionStrings:LoansDatabase", ConnectionString);
 
+        // These tests are about the request path. The dispatcher would otherwise poll in the
+        // background and call a service that is not running; it has its own tests.
+        builder.UseSetting("Outbox:Enabled", "false");
+
         builder.ConfigureServices(ConfigureTestServices);
     }
 

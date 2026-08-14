@@ -9,9 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 const string FrontendCorsPolicy = "frontend";
 
-builder.Services.AddInfrastructure(
-    builder.Configuration.GetConnectionString("LoansDatabase")
-    ?? throw new InvalidOperationException("Connection string 'LoansDatabase' is not configured."));
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // The use case and the rule engine. Every IDenyRule registered here is picked up by the
 // engine automatically, so a new rule is exactly one new line below and one new class.
