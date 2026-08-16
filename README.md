@@ -1,6 +1,6 @@
 # Niuro Loans
 
-**Video walkthrough: _(link goes here)_**
+**Video walkthrough:** https://www.loom.com/share/894ffef780a74d81b0bc5c336da5c5e8
 
 A loan application flow. Someone fills in a form, a rule engine decides whether to approve it,
 approved applications are stored, and a background event forwards them to an external service.
